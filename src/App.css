@@ -1,33 +1,210 @@
-.App {
+*{
+  /* border: 1px solid black;   */
+}
+body{
+  background: #d8f3f8;
+  background-size: auto;
+}
+/* .App {
+  background-image: url('competition.jpg');
+  background-size: auto;
+background-repeat: no-repeat;
+} */
+h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+.hedder1{
+/* border: 1px  solid black */
+/* ma */
+}
+h4{
+  /* font-family: cursive; */
+
+}
+
+.hedder2 div{
+  height: 30px;
+  width: 30px;
+  margin: 0 120px;
+  /* background-image: url("scroll.png"); */
+
+  /* background-image: url('up-arrow.png'); */
+}
+.aroow {
+  background-image: url("up-arrow.png");
+  background-size: 100%;
+}
+.hedder1 h4 {
+font-size: 20px;
+  margin: 0 10px;
+}
+.boxs{
+margin: 5% 5% ;
+    display: flex;
+    flex-direction:column; 
+    
+}
+.boxs div {
+
+    display: flex;
+    justify-content: center;
+
+}
+.boxs div div {
+
+  display: flex;
+  justify-content: center;
+  flex-direction:column; 
+
+
+}
+
+.mm {
+    /* border: 1px solid black;  */
+height: 100px ;
+width: 110px ;
+margin: 0 30px 30px 30px;
+}
+p{
+  height: 30px;
   text-align: center;
 }
+.qc{
+  margin: 5% 5% ;
+      display: flex;
+      flex-direction:column; 
+      
+  }
+  .qc div {
+  
+      display: flex;
+      justify-content: center;
+  
+  }
+  .qc div  div {
+      border: 1px solid black; 
+  height: 70px ;
+  width: 80px ;
+  margin: 10px;
+  }
+  .qc_Part{
+    border: 1px solid black; 
+height: 250px;
+width: 800px;
+margin: 0  auto;
+display: flex;
+justify-content:space-between;
+flex-direction:column; 
+background: #89dae9;
+border-radius: 10% / 50%;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+}
+.qc_Part .question {
+margin: 0 auto;
+    text-align: center;
+    width: 600px;
+}
+.qc_Part div{
+    display: flex;
+    justify-content:space-around;
+
+}
+.qc_Part div div{
+    display: flex;
+    flex-direction:column; 
+
+}
+.main_top{
+width: 30px ;
+height: 30px;
+margin:  10px auto ;
+position: relative;
+left: -500px;
+top: -186px;
+/* background-image: url("homepage.png"); */
+background-image: url("homepage.png");
+background-size: 100%
+
+}
+.Geography{
+  background-image: url("map.png");
+  background-size: 100%
+}
+.Computer{
+  background-image: url("laptop.png");
+  background-size: 100%
+}
+.Mathematics{
+  background-image: url("maths.png");
+  background-size: 100%
+}
+.History{
+  background-image: url("scroll.png");
+  background-size: 100%
+}
+.Films{
+  background-image: url("movie.png");
+  background-size: 100%
+}
+.Animal{
+  background-image: url("pets.png");
+  background-size: 100%
+}
+.Sport{
+  background-image: url("bike.png");
+  background-size: 100%
+}
+.GeneralKnowleg{
+  background-image: url("intellectual.png");
+  background-size: 100%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box1{
+background-color: rgb(14, 223, 7);
+border-radius: 25% 10%;
+
+}
+.box2{
+  background-color: rgb(247, 165, 44);
+  border-radius: 25% 10%;
+  
+}
+  .box3{
+    background-color: rgb(206, 63, 27);
+    border-radius: 25% 10%;
+}
+ header{
+
+display: flex;
+justify-content: flex-end;
+ }
+ header div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+ }
+ header div div {
+
+margin:  0  80px;
+ }
+ /* {
+  width:200px;
+  height: 50px;
+    /* background-color: red; */
+  /* padding: 15px;	
+  text-align: center;
+  line-height: 50px;
+}  */
+.blink{
+  background-color: red;
+
+  /* font-size: 25px; */
   color: white;
+  animation: blink 1s linear infinite;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
 }
