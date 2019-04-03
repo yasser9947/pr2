@@ -19,7 +19,7 @@ export default class BoxOfchoes3 extends Component {
 
         return (
             <div className= "box3"onClick={this.changeHandler}  >
-                {this.state.index + 1}
+                <p> {this.state.index + 1}</p>
 
             </div>
         )

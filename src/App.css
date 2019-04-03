@@ -26,7 +26,7 @@ h4{
 .hedder2 div{
   height: 30px;
   width: 30px;
-  margin: 0 120px;
+  margin: 0 128px;
   /* background-image: url("scroll.png"); */
 
   /* background-image: url('up-arrow.png'); */
@@ -56,6 +56,9 @@ margin: 5% 5% ;
   display: flex;
   justify-content: center;
   flex-direction:column; 
+  font-family: 'Dancing Script', cursive;
+font-size: 20px;
+font-weight: bold;
 
 
 }
@@ -120,9 +123,7 @@ margin: 0 auto;
 width: 30px ;
 height: 30px;
 margin:  10px auto ;
-position: relative;
-left: -500px;
-top: -186px;
+
 /* background-image: url("homepage.png"); */
 background-image: url("homepage.png");
 background-size: 100%
@@ -164,17 +165,32 @@ background-size: 100%
 .box1{
 background-color: rgb(14, 223, 7);
 border-radius: 25% 10%;
+font-family: 'Patrick Hand', cursive;
+
 
 }
 .box2{
   background-color: rgb(247, 165, 44);
   border-radius: 25% 10%;
-  
+  text-align: center;
+display: inline-block;
+font-family: 'Patrick Hand', cursive;
+
 }
   .box3{
     background-color: rgb(206, 63, 27);
     border-radius: 25% 10%;
+    font-family: 'Patrick Hand', cursive;
+
 }
+.box1,.box2,.box3 p{
+
+font-size: 18px;
+}
+.box1:hover,.box2:hover,.box3:hover { 
+  background-color: rgba(8, 44, 38, 0.616);
+ }
+
  header{
 
 display: flex;
@@ -197,7 +213,41 @@ margin:  0  80px;
   line-height: 50px;
 }  */
 .blink{
-  background-color: red;
+  background-color: rgb(56, 245, 9);
+
+  /* font-size: 25px; */
+  color: white;
+  animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+.yasser{
+font-size: 50px;
+  font-family: 'Kaushan Script', cursive;
+
+}
+.qc_Part h4{
+  font-family: 'Patrick Hand', cursive;
+
+font-size: 23px;
+}
+.qc_Part h2 {
+  font-family: 'Patrick Hand', cursive;
+
+  font-size: 30px;
+
+}
+.hedder1 h4 {
+  font-family: 'Kaushan Script', cursive;
+
+
+}
+.blink2{
+  background-color: rgb(245, 76, 9);
 
   /* font-size: 25px; */
   color: white;

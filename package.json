@@ -1,12 +1,13 @@
 {
+  "homepage": "http://yasser9947.github.io/pr2",
   "name": "musa-app",
-  "homepage": "http://yasser9947.github.io/project2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "sweetalert": "^2.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",

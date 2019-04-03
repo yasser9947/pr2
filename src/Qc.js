@@ -3,6 +3,8 @@ import BoxOfchoes from './BoxOfchoes'
 import BoxOfchoes2 from './BoxOfchoes2'
 import BoxOfchoes3 from './BoxOfchoes3'
 import MainPage from './MainPage'
+import swal from 'sweetalert';
+
 
 var list = [0, 1, 2, 3]
 var z = 0;
@@ -10,7 +12,7 @@ var z = 0;
 export default class Qc extends Component {
 
     state = {
-        General_Knowleg: ["https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple", "https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple", "https://opentdb.com/api.php?amount=10&category=9&difficulty=hard&type=multiple"],
+        General_Knowledge: ["https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple", "https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple", "https://opentdb.com/api.php?amount=10&category=9&difficulty=hard&type=multiple"],
         Mathematics: ["https://opentdb.com/api.php?amount=10&category=19&difficulty=easy&type=multiple", "https://opentdb.com/api.php?amount=10&category=19&difficulty=medium&type=multiple", "https://opentdb.com/api.php?amount=10&category=19&difficulty=hard&type=multiple"],
         History: ["https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple", "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=multiple", "https://opentdb.com/api.php?amount=10&category=23&difficulty=hard&type=multiple"],
         Geography: ["https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=multiple", "https://opentdb.com/api.php?amount=10&category=22&difficulty=medium&type=multiple", "https://opentdb.com/api.php?amount=10&category=22&difficulty=hard&type=multiple"],
@@ -27,7 +29,7 @@ export default class Qc extends Component {
         url: this.props.url,
         NameOftype: [],
         Level: "",
-        flash:""
+        flash:['','','','']
 
 
 
@@ -83,14 +85,18 @@ export default class Qc extends Component {
 
     // ===========================================  3 mithod 
 
-    theQuestion = (question, Options, correctAnswer, Level,i) => {
+    theQuestion = (question, Options, correctAnswer, Level, i) => {
         const data = { ...this.state }
         data.the_question = question
         data.Options = Options
         data.correctAnswer = correctAnswer
         data.correctAnswer = Options[3]
         data.Level = Level
-        data.server.splice(i,1)
+        data.flash[0] = "r"
+        data.flash[1] = "r"
+        data.flash[2] = "r"
+        data.flash[3] = "r"
+        data.server.splice(9, 1)
         this.setState(data)
     }
 
@@ -114,9 +120,16 @@ export default class Qc extends Component {
         if (RightAnswer[1] === this.state.correctAnswer) {
 
 
-            alert("yaaaaas corect inswer " + z)
+            swal({
+                title: "Good job!",
+                text: "You answered correctly!",
+                icon: "success",
+                button: "Next",
+            });
+
+console.log(RightAnswer[0])
             const data = { ...this.state }
-            data.flash ="blink"
+            data.flash[RightAnswer[0]-1] = "blink"
             this.setState(data)
 
             // if ( )
@@ -133,8 +146,17 @@ export default class Qc extends Component {
             this.props.switchPlayer(z)
         }
         else {
+            const data = { ...this.state }
+            data.flash[RightAnswer[0]-1] = "blink2"
+
+            this.setState(data)
+            swal({
+                title: "Wrong Answer",
+                text: "Hopefully you can answer correctly next time!",
+                icon: "error",
+                button: "Next",
+            });
             z++
-            alert("noooo noooo nooo " + z)
 
             this.props.switchPlayer(z)
 
@@ -160,7 +182,7 @@ export default class Qc extends Component {
         // console.log(this.state[`${this.state.url}`][0])
         // Level ={this.state.server}
         console.log(this.state.Level)
-        var Data = this.state.server.map((ele, i) => {
+        var Data1 = this.state.server.map((ele, i) => {
 
             return <BoxOfchoes ele={ele} i={i} the_question={this.theQuestion} />
         })
@@ -175,8 +197,10 @@ export default class Qc extends Component {
 
         return (
             <div>
+                <h1 className = "yasser">{this.state.url} </h1>
+
                 <div onClick={this.changeHandler} className="main_top">
-          </div>
+                </div>
                 <div className="qc_Part">
                     <div className="question">
                         <h2>{this.state.the_question}</h2>
@@ -184,27 +208,27 @@ export default class Qc extends Component {
                     </div>
                     <div>
                         <div>
-                            <h4 className = {this.state.flash}onClick={this.checkWin} >1-{this.state.Options[0]}</h4>
-                            <h4 className = {this.state.flash}onClick={this.checkWin}>2-{this.state.Options[1]}</h4>
+                            <h4 className={this.state.flash[0]} onClick={this.checkWin} >1-{this.state.Options[0]}</h4>
+                            <h4 className={this.state.flash[1]} onClick={this.checkWin}>2-{this.state.Options[1]}</h4>
                         </div>
                         <div>
-                            <h4 className = {this.state.flash}onClick={this.checkWin}>3-{this.state.Options[2]}</h4>
-                            <h4 className = {this.state.flash} onClick={this.checkWin}>4-{this.state.Options[3]}</h4>
+                            <h4 className={this.state.flash[2]} onClick={this.checkWin}>3-{this.state.Options[2]}</h4>
+                            <h4 className={this.state.flash[3]} onClick={this.checkWin}>4-{this.state.Options[3]}</h4>
                         </div>
                     </div>
                 </div>
                 <section className="qc">
                     <div>
-                        {Data}
+                        <div className="box1"> <p>.... Easy .... (5 points)</p></div>  {Data1}
 
                     </div>
 
                     <div>
-                        {Data2}
+                        <div className="box2"> <p>..Medium.. (7 points)</p> '</div>     {Data2}
 
                     </div>
                     <div>
-                        {Data3}
+                        <div className="box3"> <p>.... Hard .... (9 points)</p></div>     {Data3}
 
                     </div>
                 </section>

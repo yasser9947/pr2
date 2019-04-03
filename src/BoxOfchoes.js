@@ -18,7 +18,7 @@ Level :this.props.ele.difficulty
 // console.log(this.state.index )
         return (
             <div className ="box1" onClick={this.changeHandler}  >
-                {this.state.index + 1}
+              <p>{this.state.index + 1}</p>  
 
             </div>
         )

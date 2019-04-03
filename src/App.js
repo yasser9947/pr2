@@ -97,12 +97,13 @@ var ChangePAge =mainpage;
     return (
       <div className="App">
         <header >
+          <div> The final result</div>
           {/* <button onClick={this.aroow}>Test</button> */}
           <div className = "hedder1">
-          <div><h4>one: </h4> <h4>{this.state.scoor[0]}</h4></div>
-          <div><h4>two: </h4> <h4>{this.state.scoor[1]}</h4></div>
-          <div><h4>three: </h4> <h4>{this.state.scoor[2]}</h4></div>
-          <div><h4>four: </h4> <h4>{this.state.scoor[3]}</h4></div>
+          <div><h4>Team 1: </h4> <h4>{this.state.scoor[0]}</h4></div>
+          <div><h4>Team 2: </h4> <h4>{this.state.scoor[1]}</h4></div>
+          <div><h4>Team 3: </h4> <h4>{this.state.scoor[2]}</h4></div>
+          <div><h4>Team 4: </h4> <h4>{this.state.scoor[3]}</h4></div>
 </div>
         </header>
         <header>
@@ -113,10 +114,7 @@ var ChangePAge =mainpage;
           <div className = {this.state.aroow4}> </div>
 </div>
         </header>
-        <div>
-
-          <h1>Main Page </h1>
-        </div >
+       
         {ChangePAge}
 
       </div>
