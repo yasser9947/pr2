@@ -4,32 +4,40 @@ self.__precacheManifest = [
     "url": "/pr2/static/media/maths.0fef8771.png"
   },
   {
-    "revision": "dc8801056b9f375ebdfc",
-    "url": "/pr2/static/css/main.fd380fac.chunk.css"
+    "revision": "52fe31c124cb5b254366",
+    "url": "/pr2/static/css/main.86921758.chunk.css"
   },
   {
     "revision": "7ecf2f5bcabf5bec6637",
     "url": "/pr2/static/js/runtime~main.d0ea7803.js"
   },
   {
-    "revision": "2c59edf8e324cc7dac83",
-    "url": "/pr2/static/js/2.a027a9ff.chunk.js"
+    "revision": "6a3f7ca8ecce8cb53c6f",
+    "url": "/pr2/static/js/2.0d71f346.chunk.js"
   },
   {
     "revision": "5f95db0d6910113d999392737123cceb",
     "url": "/pr2/static/media/map.5f95db0d.png"
   },
   {
+    "revision": "2ada41958f2c5c731e46400cbfd2f0c6",
+    "url": "/pr2/static/media/research.2ada4195.png"
+  },
+  {
     "revision": "80d248505a08747bf0565137e6e26c75",
     "url": "/pr2/static/media/scroll.80d24850.png"
   },
   {
-    "revision": "dc8801056b9f375ebdfc",
-    "url": "/pr2/static/js/main.b1a006a0.chunk.js"
+    "revision": "52fe31c124cb5b254366",
+    "url": "/pr2/static/js/main.2d81ac89.chunk.js"
   },
   {
     "revision": "2d686acd2384ec55ddd9cd6fbdb28e2f",
     "url": "/pr2/static/media/bike.2d686acd.png"
+  },
+  {
+    "revision": "edefb3a5c40f6ba85e3acca0c44a1757",
+    "url": "/pr2/static/media/creative.edefb3a5.png"
   },
   {
     "revision": "57aa59fc812103ab30e2e7fc8538294b",
@@ -44,7 +52,7 @@ self.__precacheManifest = [
     "url": "/pr2/static/media/pets.ce78a029.png"
   },
   {
-    "revision": "161b50008094d8ffac1fef84b51c9584",
+    "revision": "8dd1ff152efc7bf876d3aa2b33ba5d56",
     "url": "/pr2/index.html"
   }
 ];
