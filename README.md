@@ -1,7 +1,7 @@
-# ** hexon Game**
+# ** Trivia Game **
 
 ## **- Technologies Used:**
-Html, Css, JavaScript, SweetAlert, jquery library  have been used to build hexon game.
+Html, Css, JavaScript, SweetAlert, react app have been used to build trivia game.
 
 ## **- Approach Taken:**
 Starting with scketching the page on the paper, in order to develop best ways in designing and to save time as well. Afterthat, the borders of the game was initialized and added to it the onclick features, and more of functions and methods.
