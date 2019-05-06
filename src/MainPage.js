@@ -29,7 +29,7 @@ export default class MainPage extends Component {
       <div>
      <div>
 
-<h1 className = "yasser">Welcome to Yasser's Game </h1>
+<h1 className = "yasser">Main Page </h1>
 </div >
          <section className="boxs">
 <div>

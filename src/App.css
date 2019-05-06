@@ -1,6 +1,26 @@
 *{
   /* border: 1px solid black;   */
 }
+.red {
+  color: red
+}
+.yellow{
+
+  color: rgb(156, 156, 8)
+}
+.blue {
+  color: blue;
+}
+.Purple{
+  color: Purple;
+}
+.result{
+  background-image: url('research.png');
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+
+}
 body{
   background: #d8f3f8;
   background-size: auto;
@@ -93,7 +113,7 @@ p{
   }
   .qc_Part{
     border: 1px solid black; 
-height: 250px;
+/* height: 350px; */
 width: 800px;
 margin: 0  auto;
 display: flex;
@@ -257,4 +277,45 @@ font-size: 23px;
 0%{opacity: 0;}
 50%{opacity: .5;}
 100%{opacity: 1;}
+}
+
+
+.header-container {
+  text-align: center;
+  color: rgb(255, 2, 2);
+  font-family: 'Patrick Hand', cursive;
+width: 600px;
+font-size:30px; 
+text-align: center;
+margin: 0 10%;
+ 
+}
+
+.scroll-hint {
+color: rgb(0, 0, 0);
+position: absolute;
+bottom: 30px;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 10px 40px;
+border: 3px solid #212121;
+font-size: 13px;
+font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+  background-color: rgba(255,255,255,1);
+}
+.picInto{
+  height: 200px;
+  width: 300px;
+  position: relative;
+  left: 700px;
+  top:-50px;
+  background-image: url('creative.png');
+  background-size: 66%;
+  background-repeat: no-repeat;
+}
+.img3{
+  margin-left:35% ;
+  color: red;
+  font-family: 'Patrick Hand', cursive;
+
 }

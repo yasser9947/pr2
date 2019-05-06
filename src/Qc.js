@@ -24,12 +24,12 @@ export default class Qc extends Component {
         server2: [],
         server3: [],
         the_question: "the_question",
-        Options: ["Options", "Options", "Options", "Options"],
+        Options: ["Options 1", "Options 2", "Options 3", "Options 4"],
         correctAnswer: '',
         url: this.props.url,
         NameOftype: [],
         Level: "",
-        flash:['','','','']
+        flash: ['', '', '', '']
 
 
 
@@ -92,11 +92,12 @@ export default class Qc extends Component {
         data.correctAnswer = correctAnswer
         data.correctAnswer = Options[3]
         data.Level = Level
+        this.shuffle(data.Options)
         data.flash[0] = "r"
         data.flash[1] = "r"
         data.flash[2] = "r"
         data.flash[3] = "r"
-        data.server.splice(9, 1)
+        // data.server.splice(9, 1)
         this.setState(data)
     }
 
@@ -127,9 +128,9 @@ export default class Qc extends Component {
                 button: "Next",
             });
 
-console.log(RightAnswer[0])
+            console.log(RightAnswer[0])
             const data = { ...this.state }
-            data.flash[RightAnswer[0]-1] = "blink"
+            data.flash[RightAnswer[0] - 1] = "blink"
             this.setState(data)
 
             // if ( )
@@ -147,8 +148,8 @@ console.log(RightAnswer[0])
         }
         else {
             const data = { ...this.state }
-            data.flash[RightAnswer[0]-1] = "blink2"
-
+            data.flash[RightAnswer[0] - 1] = "blink2"
+            data.flash[this.state.Options.indexOf(this.state.correctAnswer)] = "blink"
             this.setState(data)
             swal({
                 title: "Wrong Answer",
@@ -197,7 +198,7 @@ console.log(RightAnswer[0])
 
         return (
             <div>
-                <h1 className = "yasser">{this.state.url} </h1>
+                <h1 className="yasser">{this.state.url} </h1>
 
                 <div onClick={this.changeHandler} className="main_top">
                 </div>
