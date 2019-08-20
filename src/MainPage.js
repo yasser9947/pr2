@@ -7,24 +7,12 @@ export default class MainPage extends Component {
 
   }
   changeHandler = (e) => {
-  
-    //  arow = e.target.textContent;
+   //  arow = e.target.textContent;
      arow = e.target.id;
-
-
     console.log("yee " +arow)
-
     this.props.changeMainPage(arow)
-    
-
   }
- 
-  
-  
   render() {
-
-
-
     return (
       <div>
      <div>

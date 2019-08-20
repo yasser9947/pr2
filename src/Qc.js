@@ -31,9 +31,6 @@ export default class Qc extends Component {
         Level: "",
         flash: ['', '', '', '']
 
-
-
-
     }
     checkState = (opject) => {
         const data = { ...this.state }
@@ -53,8 +50,6 @@ export default class Qc extends Component {
                 return this.setState(prevState => ({
                     server: data.results
                 }))
-
-
             })
         fetch(this.state[`${this.state.url}`][1])
             .then(response => {

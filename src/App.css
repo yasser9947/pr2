@@ -203,7 +203,7 @@ font-family: 'Patrick Hand', cursive;
     font-family: 'Patrick Hand', cursive;
 
 }
-.box1,.box2,.box3 p{
+.box1,.box2,.box3,.boxC p{
 
 font-size: 18px;
 }
@@ -319,3 +319,10 @@ font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
   font-family: 'Patrick Hand', cursive;
 
 }
+.boxC{
+  background-color: rgb(0, 0, 0);
+  border-radius: 25% 10%;
+  font-family: 'Patrick Hand', cursive;
+  
+  
+  }

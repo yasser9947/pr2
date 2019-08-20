@@ -9,15 +9,17 @@ export default class BoxOfchoes extends Component {
         question: this.props.ele.question,
         incorrect_answers: this.props.ele.incorrect_answers,
         collect: [this.props.ele.incorrect_answers[0], this.props.ele.incorrect_answers[1], this.props.ele.incorrect_answers[2], this.props.ele.correct_answer],
-Level :this.props.ele.difficulty
+Level :this.props.ele.difficulty ,
+className : "box1"
     }    
     changeHandler = () => {
         this.props.the_question(this.state.question, this.state.collect ,this.correct_answer ,this.state.Level,this.state.index ); 
+        this.setState({className:"boxC"})
     }
     render() {
 // console.log(this.state.index )
         return (
-            <div className ="box1" onClick={this.changeHandler}  >
+            <div className ={this.state.className} onClick={this.changeHandler}  >
               <p>{this.state.index + 1}</p>  
 
             </div>

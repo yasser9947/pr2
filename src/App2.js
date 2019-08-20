@@ -23,7 +23,6 @@ class App2 extends Component {
     const data = {...this.state} //copy state object
     data.mainPage = !data.mainPage //opposite of whatever mainpage is
     data.url=url
-
     this.setState(data)
   }
   switchPlayer = (switchPlayer) => {
@@ -50,15 +49,14 @@ class App2 extends Component {
           data.aroow3="";
           data.aroow4="";
         }
-    else if ( player== 2){
-
+    else if ( player== 2)
+    {
             data.aroow1 = ""
             data.aroow2="";
             data.aroow3="aroow";
             data.aroow4="";
       }
             else if ( player == 3){
-
             data.aroow1 = ""
             data.aroow2="";
             data.aroow3="";
